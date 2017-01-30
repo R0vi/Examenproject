@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+require_once 'connection.php';
+$connection = new Connection('', 'dewaai', 'root', '');
+?>
 <html lang="en">
 
 <head>
@@ -56,7 +59,11 @@
                   <td>20-02-2017</td>
                   <td>500 euro</td>
                   <td>0/50</td>
-                  <td><button class="btn btn-success">Inschrijven!</button></td>
+                  <td><?php if(isset($_SESSION['login'])){
+                          echo "<button class='btn btn-success'>Inschrijven!</button>";
+                      } else {
+                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                      } ?></td>
               </tr>
               <tr>
                   <td>Gevorderden</td>
@@ -64,7 +71,11 @@
                   <td>20-02-2017</td>
                   <td>700 euro</td>
                   <td>5/25</td>
-                  <td><button class="btn btn-success">Inschrijven!</button></td>
+                  <td><?php if(isset($_SESSION['login'])){
+                          echo "<button class='btn btn-success'>Inschrijven!</button>";
+                      } else {
+                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                      } ?></td>
               </tr>
               <tr>
                   <td>Ervaren</td>
@@ -72,7 +83,11 @@
                   <td>20-02-2017</td>
                   <td>800 euro</td>
                   <td>7/15</td>
-                  <td><button class="btn btn-success">Inschrijven!</button></td>
+                  <td><?php if(isset($_SESSION['login'])){
+                          echo "<button class='btn btn-success'>Inschrijven!</button>";
+                      } else {
+                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                      } ?></td>
               </tr>
           </table>
           <hr>

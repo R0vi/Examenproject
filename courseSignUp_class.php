@@ -9,6 +9,4 @@ class coursesignup
         $this->db = $this->connection->getDb();
     }
 
-    
-
 }

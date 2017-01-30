@@ -33,7 +33,7 @@ class login
     function setSession($userData){
         $_SESSION['login'] = $userData;
         if(!empty($_SESSION['login'])){
-            var_dump($_SESSION);
+            header('Location: index.php');
         }
     }
 }

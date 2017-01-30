@@ -13,7 +13,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <?php if user is gebruiker niet logged in?>
 <!-- //////////// -->
 
 
@@ -27,7 +26,12 @@
                         <a href="contact.php">Contact</a>
                     </li>
                     <li>
-                        <a href="login.php">Login</a>
+                        <?php if(empty($_SESSION['login'])){
+                            echo"<a href='login.php'>Login</a>";
+                        } elseif(isset($_SESSION['login'])){
+                            echo"<a href='account.php'>" . $_SESSION['login']['email'] . "</a>";
+                        }
+                        ?>
                     </li>
 
                     <li>
@@ -35,7 +39,6 @@
                     </li>
 <!-- //////////// -->
 
-                <?php else if user is is loggedin ?>
 
 <!-- //////////// -->
 
@@ -49,14 +52,10 @@
                     <a href="contact.php">Contact</a>
                 </li>
                 <li>
-                    <a href="account.php">Mijn account</a>
-                </li>
-                <li>
                     <a href="logout.php">Logout</a>
                 </li>
 <!-- //////////// -->
-                
-<?php sluit ?>
+
 <!-- //////////// -->
 
             </ul>

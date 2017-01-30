@@ -1,5 +1,5 @@
 <?php
-require_once 'Connection.php';
+require_once 'connection.php';
 require_once 'login_class.php';
 
 $connection = new Connection('', 'dewaai', 'root', '');

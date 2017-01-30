@@ -1,3 +1,14 @@
+<?php
+require_once 'connection.php';
+$connection = new Connection('', 'dewaai', 'root', '');
+
+if (isset($_SESSION['login'])){
+   //
+} else {
+    header('Location:index.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,6 +48,7 @@
 
         <!-- Page Content -->
         <div class="container">
+        <?php var_dump($_SESSION);?>
             <hr>
             <h1>Gebruiker gegevens wijzigen</h1>
             <div class="row">

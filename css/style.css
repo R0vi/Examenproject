@@ -1,10 +1,19 @@
-
+body {
+	padding-top: 0px;
+}
+ul li {
+	list-style: none;
+}
 .mt75{
 	margin-top: 75px;
+}
+nav.navbar{
+	margin-bottom: 0px;
 }
 nav.navbar.navbar-inverse.navbar-fixed-top{
 	height: 75px;
 	background: #B3E5FC;
+	position: relative;
 }
 nav.navbar.navbar-inverse.navbar-fixed-top .container{
 	margin-top: 12.5px;
@@ -21,9 +30,6 @@ nav.navbar.navbar-inverse.navbar-fixed-top .container{
 }
 .navbar-inverse{
 	border: none;
-}
-header#myCarousel {
-	margin-top: 25px;
 }
 .cta_home{
 	height: 40px;

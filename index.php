@@ -1,5 +1,6 @@
 <?php
 require_once 'connection.php';
+$connection = new Connection('', 'dewaai', 'root', '');
 ?>
 <html lang="en">
 
@@ -35,7 +36,7 @@ require_once 'connection.php';
     <body>
 
         <!-- Navigation -->
-    <?php require 'nav.php' ?>
+    <?php require_once 'nav.php' ?>
 
         <!-- Header Carousel -->
         <header id="myCarousel" class="carousel slide">

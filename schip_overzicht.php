@@ -1,13 +1,9 @@
 <?php
 require_once 'connection.php';
-require_once 'schiptoevoegen_class.php';
+require_once 'schip_ophalen_class.php';
 
 $connection = new Connection('', 'dewaai', 'root', '');
-$schiptoevoegen = new schiptoevoegen($connection);
-
-if(!empty($_POST)){
-    $schiptoevoegen->setSchip($schiptoevoegen->getPost());
-}
+$schip_get = new schip_ophalen($connection);
 ?>
 <html lang="en">
 
@@ -42,65 +38,89 @@ if(!empty($_POST)){
 
     <body>
 
-   
+
         <!-- Navigation -->
-    <?php require 'nav.php' ?>
+        <?php require 'nav.php' ?>
+
 
         <!-- Page Content -->
         <div class="container">
-            <hr>
+
             <h1>Schip overzicht</h1>
+            <hr>
+            <table class="table table-hover">
+              <th>Naam</th>
+              <th>Schipnummer</th>
+              <th>Ontwerp</th>
+              <th>Cursus</th>
+              <th>Averij</th>
+              <?php
+              $schip = $schip_get->getSchip();
+              foreach ($schip as $value){
+                  echo '<tr>';
+                  echo '<td>'.$value['naam_schip'].'</td>';
+                  echo '<td>'.$value['schipnummer'].'</td>';
+                  echo '<td>'.$value['ontwerp'].'</td>';
+                  echo '<td>'.$value['cursus'].'</td>';
+                  if($value['averij'] == 0){
+                    echo "<td>Nee</td>";
+                } else {
+                    echo "<td>Ja</td>";
+                }
+                echo '<tr>';
+            }
+
+
+            ?>
+        </table>
+        <hr>
+
+    </div>
+    <!-- Footer -->
+    <footer class="">
+        <div class="container">
+            <div class="row">   
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                       quis nostrud</p>
+                       <a href="sitemap.php">Sitemap</a>
+                   </div> 
+                   <div class="col-md-4">
+                    <img src="img/logo_def.png" class="footer_logo">
+                </div> 
+                <div class="col-md-4">
+                    <h3>Contactgegevens</h3>
+                    <p>Laan van mensenrechten 500
+                        <br>
+                        7331 VZ Apeldoorn
+                        <br>
+                        Tel: 055-123456
+                        <br>
+                        Fax: 055-123457
+                    </p>
+                </div>
+            </div>
 
             <div class="row">
-                
-  </div>
-
-</div>
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">   
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                 quis nostrud</p>
-                 <a href="sitemap.php">Sitemap</a>
-             </div> 
-             <div class="col-md-4">
-                <img src="img/logo_def.png" class="footer_logo">
-            </div> 
-            <div class="col-md-4">
-                <h3>Contactgegevens</h3>
-                <p>Laan van mensenrechten 500
-                    <br>
-                    7331 VZ Apeldoorn
-                    <br>
-                    Tel: 055-123456
-                    <br>
-                    Fax: 055-123457
-                </p>
+                <div class="col-md-12 copyright_footer">
+                    <p>Copyright &copy; De Waai 2017</p>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <div class="row">
-            <div class="col-md-12 copyright_footer">
-                <p>Copyright &copy; De Waai 2017</p>
-            </div>
-        </div>
-    </div>
-</footer>
+    <!-- /.container -->
 
-<!-- /.container -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Script to Activate the Carousel -->
-<script>
-    $('.carousel').carousel({
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
 </script>

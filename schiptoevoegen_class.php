@@ -46,7 +46,7 @@ class schiptoevoegen
     function getCursus(){
         $query = $this->db->prepare('SELECT cursus_naam FROM cursus');
         $query->execute();
-        $result= $query->fetchAll();
+        $result = $query->fetchAll();
         return $result;
     }
 }

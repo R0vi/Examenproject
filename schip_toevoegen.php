@@ -57,11 +57,13 @@ if(!empty($_POST)){
                       Schipnaam:<input type="text" name="schip_naam" placeholder="Schip naam" class="form-control"><br>
                       Schipnummer:<input type="text" name="schip_nummer" placeholder="Schipnummer" class="form-control"><br>
                       Ontwerp:<input type="text" name="schip_ontwerp" class="form-control"><br>
-                        <?php $cursus = $schiptoevoegen->getCursus() ?>
                       Cursus:<select name="cursus" class="form-control">
-                      <option>Beginner</option>
-                      <option>Gevorderden</option>
-                      <option>Expert</option>
+                            <?php
+                            $course = $schiptoevoegen->getCursus();
+                            foreach ($course as $value){
+                                echo '<option>'.$value['cursus_naam'].'</option>';
+                            }
+                            ?>
                       </select>
                       Averij:<input type="checkbox" name="schip_averij" class="form-control"><br>
                       <input type="submit" class="btn btn-success">

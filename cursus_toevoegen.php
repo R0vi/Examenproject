@@ -45,9 +45,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <form>
-                       Cursus naam:<input type="text" name="cursus_name" placeholder="Cursus naam" class="form-control"><br>
+                        Cursus naam:<input type="text" name="cursus_name" placeholder="Cursus naam" class="form-control"><br>
                         Begindatum:<input type="date" name="begindatum" placeholder="--/--/--" class="form-control"><br>
-                       Einddatum:<input type="date" name="einddatum" placeholder="--/--/--" class="form-control"><br>
+                        Einddatum:<input type="date" name="einddatum" placeholder="--/--/--" class="form-control"><br>
                         Prijs:<input type="number" name="prijs" placeholder="---" class="form-control"><br>
                         Schip:<select class="form-control" name="schip_id">
                             <option>Hermelien</option>

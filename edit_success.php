@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+require_once 'connection.php';
+
+$connection = new Connection('', 'dewaai', 'root', '');
+?>
 <html lang="en">
 
 <head>

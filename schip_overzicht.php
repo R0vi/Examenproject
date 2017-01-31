@@ -62,6 +62,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
               <th>Ontwerp</th>
               <th>Cursus</th>
               <th>Averij</th>
+              <th>Delete</th>
               <?php
               $schip = $schip_get->getSchip();
               foreach ($schip as $value){
@@ -75,6 +76,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
                 } else {
                     echo "<td>Ja</td>";
                 }
+                  echo "<td><a href='delete_schip.php?naam_schip=".$value['naam_schip']."' class='btn btn-danger'>Delete</a></td>";
                 echo '<tr>';
             }
 

@@ -36,6 +36,7 @@
                     <ul class="dropdown-menu">
                       <li><a href="account.php">Account</a></li>
                       <li><a href="cursus_toevoegen.php">Cursus toevoegen</a></li>
+                      <li><a href="cursus_overzicht_admin.php">Cursus overzicht</a></li>
                       <li><a href="schip_toevoegen.php">Schip toevoegen</a></li>
                       <li><a href="schip_overzicht.php">Schip overzicht</a></li>
                       <li><a href="gebruiker_overzicht.php">Gebruiker overzicht</a></li>

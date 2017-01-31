@@ -51,17 +51,17 @@ if(!empty($_POST)){
         <!-- Page Content -->
         <div class="container">
             <hr>
-            <h1>Registreren</h1>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-md-offset-3">
+            <h1>Registreren</h1>
                     <form action="register.php" method="post">
-                        <input type="text" name="naam" class="form-control" placeholder="Naam"><br>
-                        <input type="text" name="adres" class="form-control" placeholder="Adres"><br>
-                        <input type="text" name="postcode" class="form-control" placeholder="Postcode"><br>
-                        <input type="text" name="woonplaats" class="form-control" placeholder="Woonplaats"><br>
-                        <input type="text" name="telefoon" class="form-control" placeholder="Telefoon"><br>
-                        <input type="email" name="email" class="form-control" placeholder="Email"><br>
-                        <input type="password" name="password" class="form-control" placeholder="Wachtwoord"><br>
+                        <input type="text" name="naam" class="form-control" placeholder="Naam" required><br>
+                        <input type="text" name="adres" class="form-control" placeholder="Adres" required><br>
+                        <input type="text" name="postcode" class="form-control" placeholder="Postcode" required><br>
+                        <input type="text" name="woonplaats" class="form-control" placeholder="Woonplaats" required><br>
+                        <input type="text" name="telefoon" class="form-control" placeholder="Telefoon" required><br>
+                        <input type="email" name="email" class="form-control" placeholder="Email" required><br>
+                        <input type="password" name="password" class="form-control" placeholder="Wachtwoord" required><br>
                         <input type="submit" name="submit" class="btn btn-success">
                     </form>
 

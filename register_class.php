@@ -12,6 +12,14 @@ class register
     function getPost(){
         if(isset($_POST['email'])){
             $email = $_POST['email'];
+
+            $check = $this->db->prepare('SELECT * FROM gebruiker WHERE email = :email');
+            $check->execute(array(':email' => $email));
+            $result = $check->fetch();
+            if ($result){
+                echo "fucked up mate";
+                die();
+            } 
         } else {
             return false;
         }
@@ -51,6 +59,7 @@ class register
     function setUser($post){
         $query = $this->db->prepare('INSERT INTO gebruiker (naam, adres, postcode, woonplaats, telefoon, email, wachtwoord, rechten) VALUES (:naam, :adres, :postcode, :woonplaats, :telefoon, :email, :password, :rechten)');
         $query->execute(array(':naam' => $post['naam'], ':adres' => $post['adres'], ':postcode' => $post['postcode'], ':woonplaats' => $post['woonplaats'], ':telefoon' => $post['telefoon'], ':email' => $post['email'], ':password' => $post['password'], ':rechten' => $post['rechten']));
+    header('Location:register_succes.php');
     }
 
 }

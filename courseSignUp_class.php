@@ -16,4 +16,8 @@ class coursesignup
         return $result;
     }
 
+    function singnUp(){
+        
+    }
+
 }

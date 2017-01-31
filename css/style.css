@@ -55,7 +55,10 @@ nav.navbar.navbar-inverse.navbar-fixed-top .container{
 	width: 100%;
 }
 
-
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	    color: #ffffff;
+    background-color: #ffc107;
+}
 
 
 

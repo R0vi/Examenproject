@@ -49,4 +49,5 @@ class schiptoevoegen
         $result = $query->fetchAll();
         return $result;
     }
+    
 }

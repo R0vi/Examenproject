@@ -5,12 +5,6 @@ require_once 'courseSignUp_class.php';
 $connection = new Connection('', 'dewaai', 'root', '');
 $courseSingUp = new coursesignup($connection);
 
-if ($_SESSION['login']['rechten'] == "admin"){
-    //
-} else {
-    header('Location:index.php');
-}
-
 if(!empty($_POST)){
     $courseSingUp->cursusSingnUp();
 }
@@ -74,7 +68,7 @@ if(!empty($_POST)){
                       echo '<td>'.$value['begindatum'].'</td>';
                       echo '<td>'.$value['einddatum'].'</td>';
                       echo '<td>'.$value['prijs'].'</td>';
-                      echo '<td> calculeer maar</td>';
+                      echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'</td>';
                       echo '<td>';
                       if(isset($_SESSION['login'])){
                           echo "<form action='cursus_overzicht.php' method='post'>";

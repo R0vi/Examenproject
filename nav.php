@@ -26,21 +26,33 @@
                         <?php if(empty($_SESSION['login'])){
                             echo"<a href='login.php'>Login</a>";
                         } elseif(isset($_SESSION['login'])){
-                            echo"<a href='account.php'>" . $_SESSION['login']['email'] . "</a>";
-                        }
-                        ?>
-                    </li>
-                    <li>
-                        <?php if(empty($_SESSION['login'])){
-                            echo "<a href='register.php'>Registreren</a>";
-                        }
-                        ?>
-                    </li>
-                    <li>
-                        <?php if(isset($_SESSION['login'])){
-                            echo "<a href='logout.php'>Logout</a>";
-                        } ?>
-                    </li>
+                           ?>
+
+                           <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php  echo $_SESSION['login']['email']; ?> <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="account.php">Account</a></li>
+                                  <li><a href="cursus_toevoegen.php">Cursus toevoegen</a></li>
+                                  <li><a href="schip_toevoegen.php">Schip toevoegen</a></li>
+                                  <li><a href="schip_overzicht.php">Schip overzicht</a></li>
+                                  <li><a href="gebruiker_overzicht.php">Gebruiker overzicht</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                      <?php } ?>
+                  </li>
+                  <li>
+                    <?php if(empty($_SESSION['login'])){
+                        echo "<a href='register.php'>Registreren</a>";
+                    }
+                    ?>
+                </li>
+                <li>
+                    <?php if(isset($_SESSION['login'])){
+                        echo "<a href='logout.php'>Logout</a>";
+                    } ?>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

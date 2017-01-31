@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+require_once 'connection.php';
+require_once 'gebruikeroverzicht_ophalen_class.php';
+if ($_SESSION['login']['rechten'] == "admin"){
+   //
+} else {
+    header('Location:index.php');
+}
+
+$connection = new Connection('', 'dewaai', 'root', '');
+$user_get = new gebruikers_ophalen($connection);
+?>
 <html lang="en">
 
 <head>
@@ -32,9 +43,9 @@
 
     <body>
 
-       
+
         <!-- Navigation -->
-    <?php require 'nav.php' ?>
+        <?php require 'nav.php' ?>
 
 
         <!-- Page Content -->
@@ -43,55 +54,37 @@
             <h1>Gebruiker overzicht</h1>
             <hr>
             <table class="table table-hover">
+              <th>Id</th>
               <th>Naam</th>
               <th>Adres</th>
               <th>Postcode</th>
               <th>Woonplaats</th>
               <th>Telefoon</th>
               <th>Email</th>
-              <th>Aanpassen</th>
-              <tr>
-                <td>Henk</td>
-                <td>Abstraat 1</td>
-                <td>1234ab</td>
-                <td>Amsterdam</td>
-                <td>0612345678</td>
-                <td>henk@web.nl</td>
-                <td><a href="gebruiker_wijzigen.php" class="btn btn-success">Wijzigen</a></td>
-              </tr>
-              <tr>
-                <td>Henk</td>
-                <td>Abstraat 1</td>
-                <td>1234ab</td>
-                <td>Amsterdam</td>
-                <td>0612345678</td>
-                <td>henk@web.nl</td>
-                <td><a href="gebruiker_wijzigen.php" class="btn btn-success">Wijzigen</a></td>
-              </tr>
-              <tr>
-                <td>Henk</td>
-                <td>Abstraat 1</td>
-                <td>1234ab</td>
-                <td>Amsterdam</td>
-                <td>0612345678</td>
-                <td>henk@web.nl</td>
-                <td><a href="gebruiker_wijzigen.php" class="btn btn-success">Wijzigen</a></td>
-              </tr>
-              <tr>
-                <td>Henk</td>
-                <td>Abstraat 1</td>
-                <td>1234ab</td>
-                <td>Amsterdam</td>
-                <td>0612345678</td>
-                <td>henk@web.nl</td>
-                <td><a href="gebruiker_wijzigen.php" class="btn btn-success">Wijzigen</a></td>
-              </tr>
-          </table>
-          <hr>
+              <th>Rechten</th>
+              <?php
+              $gebruiker = $user_get->getUsers();
+              foreach ($gebruiker as $value){
+                  echo '<tr>';
+                  echo '<td>'.$value['Gebruikers_id'].'</td>';
+                  echo '<td>'.$value['naam'].'</td>';
+                  echo '<td>'.$value['adres'].'</td>';
+                  echo '<td>'.$value['postcode'].'</td>';
+                  echo '<td>'.$value['woonplaats'].'</td>';
+                  echo '<td>'.$value['telefoon'].'</td>';
+                  echo '<td>'.$value['email'].'</td>';
+                  echo '<td>'.$value['rechten'].'</td>';
+                echo '<tr>';
+            }
 
-      </div>
-      <!-- Footer -->
-      <footer class="">
+
+            ?>
+        </table>
+        <hr>
+
+    </div>
+    <!-- Footer -->
+    <footer class="">
         <div class="container">
             <div class="row">   
                 <div class="col-md-4">

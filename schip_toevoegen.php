@@ -1,6 +1,11 @@
 <?php
 require_once 'connection.php';
 require_once 'schiptoevoegen_class.php';
+if ($_SESSION['login']['rechten'] == "admin"){
+   //
+} else {
+    header('Location:index.php');
+}
 
 $connection = new Connection('', 'dewaai', 'root', '');
 $schiptoevoegen = new schiptoevoegen($connection);

@@ -1,12 +1,19 @@
 <?php
 require_once 'connection.php';
+require_once 'user_edit_class.php';
 $connection = new Connection('', 'dewaai', 'root', '');
 
+$edit = new edit($connection);
 if (isset($_SESSION['login'])){
    //
 } else {
     header('Location:index.php');
 }
+
+if(!empty($_POST)){
+    $edit->updateUser($edit->getPost());
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -53,15 +60,15 @@ if (isset($_SESSION['login'])){
             <h1>Gebruiker gegevens wijzigen</h1>
             <div class="row">
                 <div class="col-md-6">
-                    <form>
-                        <input type="text" name="name" class="form-control" placeholder="Naam"><br>
-                        <input type="text" name="adres" class="form-control" placeholder="Adres"><br>
-                        <input type="text" name="postcode" class="form-control" placeholder="Postcode"><br>
-                        <input type="text" name="woonplaats" class="form-control" placeholder="Woonplaats"><br>
-                        <input type="text" name="telefoon" class="form-control" placeholder="Telefoon"><br>
-                        <input type="email" name="email" class="form-control" placeholder="Email"><br>
-                        <input type="password" name="password" class="form-control" placeholder="Wachtwoord"><br>
-                        <input type="submit" name="submit" class="btn btn-success">
+                    <form method="POST" action="gebruiker_wijzigen.php">
+                        <input type="text" name="naam" class="form-control" placeholder="Naam" value="<?php echo $_SESSION['login']['1'];?>"><br>
+                        <input type="text" name="adres" class="form-control" placeholder="Adres"  value="<?php echo $_SESSION['login']['2'];?>"><br>
+                        <input type="text" name="postcode" class="form-control" placeholder="Postcode"  value="<?php echo $_SESSION['login']['3'];?>"><br>
+                        <input type="text" name="woonplaats" class="form-control" placeholder="Woonplaats"  value="<?php echo $_SESSION['login']['4'];?>"><br>
+                        <input type="text" name="telefoon" class="form-control" placeholder="Telefoon"  value="<?php echo $_SESSION['login']['5'];?>"><br>
+                        <input type="email" name="email" class="form-control" placeholder="Email"  value="<?php echo $_SESSION['login']['6'];?>"><br>
+                        <input type="password" name="password" class="form-control" placeholder="Wachtwoord"  value="<?php echo $_SESSION['login']['7'];?>"><br>
+                        <input type="submit" class="btn btn-success">
                     </form>
 
                     <hr>

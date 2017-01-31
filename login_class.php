@@ -18,12 +18,18 @@ class login
     }
 
     function compareWithDatabase($userPost){
-        $query = $this->db->prepare('SELECT * FROM gebruiker WHERE email = :email AND wachtwoord = :password;');
-        $query->execute(array(':email' => $userPost['email'], ':password' => $userPost['password']));
+        $query = $this->db->prepare('SELECT * FROM gebruiker WHERE email = :email');
+        $query->execute(array(':email' => $userPost['email']));
         $result = $query->fetch();
+
         if($result){
-            echo "login succesfull";
-            return $result;
+            if(password_verify($userPost['password'], $result['wachtwoord'])){
+                echo "login succesfull";
+                return $result;
+            } else {
+                echo "login unsuccesfull";
+                return null;
+            }
         } else {
             echo "login unsuccesfull";
             return null;

@@ -69,6 +69,7 @@ class register
 
     function setUser($post){
         if(empty($this->errors)){
+            $post['password'] = password_hash($post['password'], PASSWORD_DEFAULT);
             $query = $this->db->prepare('INSERT INTO gebruiker (naam, adres, postcode, woonplaats, telefoon, email, wachtwoord, rechten) VALUES (:naam, :adres, :postcode, :woonplaats, :telefoon, :email, :password, :rechten)');
             $query->execute(array(':naam' => $post['naam'], ':adres' => $post['adres'], ':postcode' => $post['postcode'], ':woonplaats' => $post['woonplaats'], ':telefoon' => $post['telefoon'], ':email' => $post['email'], ':password' => $post['password'], ':rechten' => $post['rechten']));
             header('Location:register_succes.php');

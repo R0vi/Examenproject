@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+require_once 'connection.php';
+require_once 'schiptoevoegen_class.php';
+
+$connection = new Connection('', 'dewaai', 'root', '');
+$schiptoevoegen = new schiptoevoegen($connection);
+
+if(!empty($_POST)){
+    $schiptoevoegen->setSchip($schiptoevoegen->getPost());
+}
+?>
 <html lang="en">
 
 <head>
@@ -43,22 +53,18 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <form>
-                      Schipnaam:<input type="text" name="naam_schip" placeholder="--------" class="form-control"><br>
-                      Schipnummer:<input type="text" name="schipnummer" placeholder="Schipnummer" class="form-control"><br>
-                      Ontwerp:<select name="ontwerp" class="form-control">
-                      <option>Schouw</option>
-                      <option>Draak</option>
-                      <option>16 Kwadraats</option>
-                  </select><br>
-                  Cursus:<select name="cursus" class="form-control">
-                  <option>Beginner</option>
-                  <option>Gevorderden</option>
-                  <option>Expert</option>
-              </select>
-              Averij:<input type="checkbox" name="averij" class="form-control"><br>
-              <input type="submit" name="submit" class="btn btn-success">
-          </form>
+                    <form action="schip_toevoegen.php" method="post">
+                      Schipnaam:<input type="text" name="schip_naam" placeholder="Schip naam" class="form-control"><br>
+                      Schipnummer:<input type="text" name="schip_nummer" placeholder="Schipnummer" class="form-control"><br>
+                      Ontwerp:<input type="text" name="schip_ontwerp" class="form-control"><br>
+                      Cursus:<select name="cursus" class="form-control">
+                      <option>Beginner</option>
+                      <option>Gevorderden</option>
+                      <option>Expert</option>
+                      </select>
+                      Averij:<input type="checkbox" name="schip_averij" class="form-control"><br>
+                      <input type="submit" class="btn btn-success">
+                    </form>
           <hr>
       </div>
   </div>

@@ -41,6 +41,7 @@ class schiptoevoegen
     function setSchip($post){
         $query = $this->db->prepare('INSERT INTO schip (naam_schip, schipnummer, ontwerp, cursus, averij) VALUES (:schipnaam, :schipnummer, :ontwerp, :cursus, :averij)');
         $query->execute(array(':schipnaam' => $post['schipnaam'], ':schipnummer' => $post['schipnummer'], ':ontwerp' => $post['schipontwerp'], ':cursus' => $post['cursus'], ':averij' => $post['schipaverij']));
+        header('Location:schip_overzicht.php');
     }
 
     function getCursus(){

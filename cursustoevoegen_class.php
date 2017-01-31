@@ -41,6 +41,7 @@ class cursustoevoegen
     function setCursus($post){
         $query = $this->db->prepare('INSERT INTO cursus (cursus_naam, begindatum, einddatum, prijs, schip_id) VALUES (:cursus_naam, :begindatum, :einddatum, :prijs, (SELECT schip_id FROM schip WHERE naam_schip = :schip))');
         $query->execute(array(':cursus_naam' => $post['cursusnaam'], ':begindatum' => $post['begindatum'], ':einddatum' => $post['einddatum'], ':schip' => $post['schip'], ':prijs' => $post['prijs']));
+        header('Location:cursus_overzicht.php');
     }
 
     function getSchip(){

@@ -69,7 +69,7 @@ $courseSingUp = new coursesignup($connection);
                       if(isset($_SESSION['login'])){
                           echo "<form action='cursus_overzicht.php' method='post'><input type='submit' class='btn btn-success' name='".$value['cursus_naam']."' value='bestellen'></form>";
                       } else {
-                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                          echo "<a href='login.php' class='btn btn-success'>login om in te schrijven</a>";
                       }
                       echo '</td>';
                       echo '<tr>';

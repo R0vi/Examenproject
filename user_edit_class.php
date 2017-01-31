@@ -2,7 +2,7 @@
 class edit
 {
     private $db;
-
+    private $user_data;
     function __construct(Connection $connection){
         $this->connection = $connection;
         $this->db = $this->connection->getDb();
@@ -11,15 +11,6 @@ class edit
 
         if(!empty($_POST['email'])){
             $email = $_POST['email'];
-
-            $check = $this->db->prepare('SELECT * FROM gebruiker WHERE email = :email');
-            $check->execute(array(':email' => $email));
-            $result = $check->fetch();
-            if ($result){
-                $this->errors = "Email adres al in gebruik!";
-                return false;
-            } 
-
         } else {
             $this->errors = "Email adres invullen!";
             return false;
@@ -61,15 +52,27 @@ class edit
             return false;
         }
         
+        $user_data = ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
+
         return ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
     }
 
     function updateUser($post){
         if(empty($this->errors)){
             $query = $this->db->prepare('UPDATE gebruiker SET naam = :naam, adres = :adres, postcode = :postcode, woonplaats = :woonplaats, telefoon = :telefoon, email = :email, wachtwoord = :password WHERE Gebruikers_id = :gebruikers_id');
-            $query->execute(array(':naam' => $post['naam'], ':adres' => $post['adres'], ':postcode' => $post['postcode'], ':woonplaats' => $post['woonplaats'], ':telefoon' => $post['telefoon'], ':email' => $post['email'], ':password' => $post['password'], ':rechten' => $post['rechten'], ':gebruikers_id' => $_SESSION["login"]["Gebruikers_id"]));
+
+            $query->execute(array(':naam' => $post['naam'], ':adres' => $post['adres'], ':postcode' => $post['postcode'], ':woonplaats' => $post['woonplaats'], ':telefoon' => $post['telefoon'], ':email' => $post['email'], ':password' => $post['password'], ':gebruikers_id' => $_SESSION["login"]["Gebruikers_id"]));
+            
+
+
+            // $query = $this->db->prepare('SELECT * FROM gebruiker WHERE Gebruikers_id = :gebruikers_id');
+            // $query->execute(array(':gebruikers_id' => $_SESSION["login"]["gebruikers_id"]));
+            // $result = $query->fetch();
+            $_SESSION['login'] = $user_data;
+
             header('Location:edit_success.php');
         } else {
+            echo "string";
             return false;
         }
     }

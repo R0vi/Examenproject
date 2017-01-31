@@ -62,7 +62,7 @@ $connection = new Connection('', 'dewaai', 'root', '');
                   <td><?php if(isset($_SESSION['login'])){
                           echo "<button class='btn btn-success'>Inschrijven!</button>";
                       } else {
-                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                          echo "<a href='login.php' c class='btn btn-success'>login om in te schrijven</a>";
                       } ?></td>
               </tr>
               <tr>
@@ -74,7 +74,7 @@ $connection = new Connection('', 'dewaai', 'root', '');
                   <td><?php if(isset($_SESSION['login'])){
                           echo "<button class='btn btn-success'>Inschrijven!</button>";
                       } else {
-                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                          echo "<a href='login.php' class='btn btn-success'>login om in te schrijven</a>";
                       } ?></td>
               </tr>
               <tr>
@@ -86,7 +86,7 @@ $connection = new Connection('', 'dewaai', 'root', '');
                   <td><?php if(isset($_SESSION['login'])){
                           echo "<button class='btn btn-success'>Inschrijven!</button>";
                       } else {
-                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                          echo "<a href='login.php' c class='btn btn-success'>login om in te schrijven</a>";
                       } ?></td>
               </tr>
           </table>

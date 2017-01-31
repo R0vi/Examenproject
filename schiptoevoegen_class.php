@@ -42,4 +42,11 @@ class schiptoevoegen
         $query = $this->db->prepare('INSERT INTO schip (naam_schip, schipnummer, ontwerp, cursus, averij) VALUES (:schipnaam, :schipnummer, :ontwerp, :cursus, :averij)');
         $query->execute(array(':schipnaam' => $post['schipnaam'], ':schipnummer' => $post['schipnummer'], ':ontwerp' => $post['schipontwerp'], ':cursus' => $post['cursus'], ':averij' => $post['schipaverij']));
     }
+
+    function getCursus(){
+        $query = $this->db->prepare('SELECT cursus_naam FROM cursus');
+        $query->execute();
+        $result= $query->fetchAll();
+        return $result;
+    }
 }

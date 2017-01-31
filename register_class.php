@@ -45,12 +45,12 @@ class register
         } else {
             return false;
         }
-        return ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon];
+        return ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
     }
 
     function setUser($post){
-        $query = $this->db->prepare('INSERT INTO gebruiker (naam, adres, postcode, woonplaats, telefoon, email, wachtwoord) VALUES (:naam, :adres, :postcode, :woonplaats, :telefoon, :email, :password)');
-        $query->execute(array(':naam' => $post['naam'], ':adres' => $post['adres'], ':postcode' => $post['postcode'], ':woonplaats' => $post['woonplaats'], ':telefoon' => $post['telefoon'], ':email' => $post['email'], ':password' => $post['password']));
+        $query = $this->db->prepare('INSERT INTO gebruiker (naam, adres, postcode, woonplaats, telefoon, email, wachtwoord, rechten) VALUES (:naam, :adres, :postcode, :woonplaats, :telefoon, :email, :password, :rechten)');
+        $query->execute(array(':naam' => $post['naam'], ':adres' => $post['adres'], ':postcode' => $post['postcode'], ':woonplaats' => $post['woonplaats'], ':telefoon' => $post['telefoon'], ':email' => $post['email'], ':password' => $post['password'], ':rechten' => $post['rechten']));
     }
 
 }

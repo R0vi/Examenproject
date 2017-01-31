@@ -1,6 +1,9 @@
 <?php
 require_once 'connection.php';
+require_once 'courseSignUp_class.php';
+
 $connection = new Connection('', 'dewaai', 'root', '');
+$courseSingUp = new coursesignup($connection);
 ?>
 <html lang="en">
 
@@ -53,42 +56,25 @@ $connection = new Connection('', 'dewaai', 'root', '');
               <th>Prijs</th>
               <th>Aantal cursisten</th>
               <th>Inschrijven?</th>
-              <tr>
-                  <td>Beginnercursus</td>
-                  <td>31-01-2017</td>
-                  <td>20-02-2017</td>
-                  <td>500 euro</td>
-                  <td>0/50</td>
-                  <td><?php if(isset($_SESSION['login'])){
-                          echo "<button class='btn btn-success'>Inschrijven!</button>";
+                  <?php
+                  $cursus = $courseSingUp->getCursus();
+                  foreach ($cursus as $value){
+                      echo '<tr>';
+                      echo '<td>'.$value['cursus_naam'].'</td>';
+                      echo '<td>'.$value['begindatum'].'</td>';
+                      echo '<td>'.$value['einddatum'].'</td>';
+                      echo '<td>'.$value['prijs'].'</td>';
+                      echo '<td> calculeer maar</td>';
+                      echo '<td>';
+                      if(isset($_SESSION['login'])){
+                          echo "<form action='cursus_overzicht.php' method='post'><input type='submit' class='btn btn-success' name='".$value['cursus_naam']."' value='bestellen'></form>";
                       } else {
-                          echo "<a href='login.php' c class='btn btn-success'>login om in te schrijven</a>";
-                      } ?></td>
-              </tr>
-              <tr>
-                  <td>Gevorderden</td>
-                  <td>31-01-2017</td>
-                  <td>20-02-2017</td>
-                  <td>700 euro</td>
-                  <td>5/25</td>
-                  <td><?php if(isset($_SESSION['login'])){
-                          echo "<button class='btn btn-success'>Inschrijven!</button>";
-                      } else {
-                          echo "<a href='login.php' class='btn btn-success'>login om in te schrijven</a>";
-                      } ?></td>
-              </tr>
-              <tr>
-                  <td>Ervaren</td>
-                  <td>31-01-2017</td>
-                  <td>20-02-2017</td>
-                  <td>800 euro</td>
-                  <td>7/15</td>
-                  <td><?php if(isset($_SESSION['login'])){
-                          echo "<button class='btn btn-success'>Inschrijven!</button>";
-                      } else {
-                          echo "<a href='login.php' c class='btn btn-success'>login om in te schrijven</a>";
-                      } ?></td>
-              </tr>
+                          echo "<button class='btn btn-success'>login om in te schrijven</button>";
+                      }
+                      echo '</td>';
+                      echo '<tr>';
+                  }
+                  ?>
           </table>
           <hr>
 

@@ -8,12 +8,6 @@ $login = new login($connection);
 if(!empty($_POST)){
     $login->setSession($login->compareWithDatabase($login->getPost()));
 }
-if (isset($_SESSION['login'])){
-   
-    header('Location:account.php');
-} else {
-    //
-}
 ?>
 <html lang="en">
 

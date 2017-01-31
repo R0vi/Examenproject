@@ -30,9 +30,11 @@
                         }
                         ?>
                     </li>
-
                     <li>
-                        <a href="register.php">Registreren</a>
+                        <?php if(empty($_SESSION['login'])){
+                            echo "<a href='register.php'>Registreren</a>";
+                        }
+                        ?>
                     </li>
                     <li>
                         <?php if(isset($_SESSION['login'])){

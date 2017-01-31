@@ -4,6 +4,10 @@ require_once 'courseSignUp_class.php';
 
 $connection = new Connection('', 'dewaai', 'root', '');
 $courseSingUp = new coursesignup($connection);
+
+if(!empty($_POST)){
+    $courseSingUp->cursusSingnUp();
+}
 ?>
 <html lang="en">
 
@@ -67,7 +71,10 @@ $courseSingUp = new coursesignup($connection);
                       echo '<td> calculeer maar</td>';
                       echo '<td>';
                       if(isset($_SESSION['login'])){
-                          echo "<form action='cursus_overzicht.php' method='post'><input type='submit' class='btn btn-success' name='".$value['cursus_naam']."' value='bestellen'></form>";
+                          echo "<form action='cursus_overzicht.php' method='post'>";
+                          echo "<input type='hidden' name='cursus_naam' value='".$value['cursus_naam']."'>";
+                          echo "<input type='submit' class='btn btn-success' value='bestellen'>";
+                          echo "</form>";
                       } else {
                           echo "<a href='login.php' class='btn btn-success'>login om in te schrijven</a>";
                       }

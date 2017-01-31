@@ -5,6 +5,12 @@ require_once 'courseSignUp_class.php';
 $connection = new Connection('', 'dewaai', 'root', '');
 $courseSingUp = new coursesignup($connection);
 
+if ($_SESSION['login']['rechten'] == "admin"){
+    //
+} else {
+    header('Location:index.php');
+}
+
 if(!empty($_POST)){
     $courseSingUp->cursusSingnUp();
 }

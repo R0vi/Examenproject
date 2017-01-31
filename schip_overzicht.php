@@ -2,14 +2,16 @@
 require_once 'connection.php';
 require_once 'schip_ophalen_class.php';
 
+$connection = new Connection('', 'dewaai', 'root', '');
+$schip_get = new schip_ophalen($connection);
+
 if ($_SESSION['login']['rechten'] == "admin"){
    //
 } else {
     header('Location:index.php');
 }
 
-$connection = new Connection('', 'dewaai', 'root', '');
-$schip_get = new schip_ophalen($connection);
+
 ?>
 <html lang="en">
 

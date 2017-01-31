@@ -5,6 +5,12 @@ require_once 'cursustoevoegen_class.php';
 $connection = new Connection('', 'dewaai', 'root', '');
 $cursustoevoegen = new cursustoevoegen($connection);
 
+if ($_SESSION['login']['rechten'] == "admin"){
+    //
+} else {
+    header('Location:index.php');
+}
+
 if(!empty($_POST)){
     $cursustoevoegen->setCursus($cursustoevoegen->getPost());
 }

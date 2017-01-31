@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+require_once 'connection.php';
+require_once 'cursustoevoegen_class.php';
+
+$connection = new Connection('', 'dewaai', 'root', '');
+$cursustoevoegen = new cursustoevoegen($connection);
+
+if(!empty($_POST)){
+    $cursustoevoegen->setCursus($cursustoevoegen->getPost());
+}
+?>
 <html lang="en">
 
 <head>
@@ -44,16 +54,18 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <form>
-                        Cursus naam:<input type="text" name="cursus_name" placeholder="Cursus naam" class="form-control"><br>
+                    <form method="post" action="cursus_toevoegen.php">
+                        Cursus naam:<input type="text" name="cursus_naam" placeholder="Cursus naam" class="form-control"><br>
                         Begindatum:<input type="date" name="begindatum" placeholder="--/--/--" class="form-control"><br>
                         Einddatum:<input type="date" name="einddatum" placeholder="--/--/--" class="form-control"><br>
                         Prijs:<input type="number" name="prijs" placeholder="---" class="form-control"><br>
-                        Schip:<select class="form-control" name="schip_id">
-                            <option>Hermelien</option>
-                            <option>Herman</option>
-                            <option>Alex</option>
-                            <option>Rubberduck</option>
+                        Schip:<select class="form-control" name="schip">
+                            <?php
+                            $schip = $cursustoevoegen->getSchip();
+                            foreach ($schip as $value){
+                                echo '<option>'.$value['naam_schip'].'</option>';
+                            }
+                            ?>
                         </select><br>
                         <input type="submit" name="submit" class="btn btn-success">
                     </form>

@@ -45,7 +45,7 @@ if(!empty($_POST)){
     <body>
 
         <!-- Navigation -->
-    <?php require 'nav.php' ?>
+        <?php require 'nav.php' ?>
 
 
         <!-- Page Content -->
@@ -53,68 +53,70 @@ if(!empty($_POST)){
             <hr>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-            <h1>Registreren</h1>
-                    <form action="register.php" method="post">
-                        <input type="text" name="naam" class="form-control" placeholder="Naam" required><br>
-                        <input type="text" name="adres" class="form-control" placeholder="Adres" required><br>
-                        <input type="text" name="postcode" class="form-control" placeholder="Postcode" required><br>
-                        <input type="text" name="woonplaats" class="form-control" placeholder="Woonplaats" required><br>
-                        <input type="text" name="telefoon" class="form-control" placeholder="Telefoon" required><br>
-                        <input type="email" name="email" class="form-control" placeholder="Email" required><br>
-                        <input type="password" name="password" class="form-control" placeholder="Wachtwoord" required><br>
-                        <input type="submit" name="submit" class="btn btn-success">
-                    </form>
+                    <h1>Registreren</h1>
+                       <?php 
+                       if(!empty($register->errors)) { echo '<div class="alert alert-danger">' . $register->errors . '</div>'; }?>
+                        <form action="register.php" method="post">
+                            <input type="text" name="naam" class="form-control" placeholder="Naam" ><br>
+                            <input type="text" name="adres" class="form-control" placeholder="Adres" ><br>
+                            <input type="text" name="postcode" class="form-control" placeholder="Postcode" ><br>
+                            <input type="text" name="woonplaats" class="form-control" placeholder="Woonplaats" ><br>
+                            <input type="text" name="telefoon" class="form-control" placeholder="Telefoon" ><br>
+                            <input type="email" name="email" class="form-control" placeholder="Email" ><br>
+                            <input type="password" name="password" class="form-control" placeholder="Wachtwoord" ><br>
+                            <input type="submit" name="submit" class="btn btn-success">
+                        </form>
 
-                    <hr>
+                        <hr>
 
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">   
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                           quis nostrud</p>
-                           <a href="sitemap.html">Sitemap</a>
-                       </div> 
-                       <div class="col-md-4">
-                        <img src="img/logo_def.png" class="footer_logo">
-                    </div> 
-                    <div class="col-md-4">
-                        <h3>Contactgegevens</h3>
-                        <p>Laan van mensenrechten 500
-                            <br>
-                            7331 VZ Apeldoorn
-                            <br>
-                            Tel: 055-123456
-                            <br>
-                            Fax: 055-123457
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 copyright_footer">
-                        <p>Copyright &copy; De Waai 2017</p>
                     </div>
                 </div>
             </div>
-        </footer>
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">   
+                        <div class="col-md-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                               quis nostrud</p>
+                               <a href="sitemap.html">Sitemap</a>
+                           </div> 
+                           <div class="col-md-4">
+                            <img src="img/logo_def.png" class="footer_logo">
+                        </div> 
+                        <div class="col-md-4">
+                            <h3>Contactgegevens</h3>
+                            <p>Laan van mensenrechten 500
+                                <br>
+                                7331 VZ Apeldoorn
+                                <br>
+                                Tel: 055-123456
+                                <br>
+                                Fax: 055-123457
+                            </p>
+                        </div>
+                    </div>
 
-        <!-- /.container -->
+                    <div class="row">
+                        <div class="col-md-12 copyright_footer">
+                            <p>Copyright &copy; De Waai 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+            <!-- /.container -->
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
 
-        <!-- Script to Activate the Carousel -->
-        <script>
-            $('.carousel').carousel({
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- Script to Activate the Carousel -->
+            <script>
+                $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
 </script>

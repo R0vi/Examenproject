@@ -2,6 +2,7 @@
 
 class schip_ophalen
 {
+    
     private $db;
 
     function __construct(Connection $connection){

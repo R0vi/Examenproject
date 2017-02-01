@@ -21,7 +21,7 @@ class login
     }
     //
 
-    //
+    //check of login klopt
     function compareWithDatabase($userPost){
         $query = $this->db->prepare('SELECT * FROM gebruiker WHERE email = :email');
         $query->execute(array(':email' => $userPost['email']));
@@ -40,11 +40,14 @@ class login
             return null;
         }
     }
+    //
 
+    //de data van de user in de sessie zetten
     function setSession($userData){
         $_SESSION['login'] = $userData;
         if(!empty($_SESSION['login'])){
             header('Location: index.php');
         }
     }
+    //
 }

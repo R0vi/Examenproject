@@ -2,13 +2,16 @@
 
 class cursustoevoegen
 {
+    //ophalen Database connectie
     private $db;
 
     function __construct(Connection $connection){
         $this->connection = $connection;
         $this->db = $this->connection->getDb();
     }
+    //
 
+    //ophalen form data en deze in een array returnen
     function getPost(){
         if(isset($_POST['cursus_naam'])){
             $cursusnaam = $_POST['cursus_naam'];
@@ -37,12 +40,16 @@ class cursustoevoegen
         }
         return ['cursusnaam' => $cursusnaam, 'begindatum' => $begindatum, 'einddatum' => $einddatum, 'prijs' => $prijs, 'schip' => $schip];
     }
-
+    //
+    
+    //cursus naar de database sturen
+    //parameter=het form (in meeste gevallen de functie getPost)
     function setCursus($post){
         $query = $this->db->prepare('INSERT INTO cursus (cursus_naam, begindatum, einddatum, prijs, schip_id) VALUES (:cursus_naam, :begindatum, :einddatum, :prijs, (SELECT schip_id FROM schip WHERE naam_schip = :schip))');
         $query->execute(array(':cursus_naam' => $post['cursusnaam'], ':begindatum' => $post['begindatum'], ':einddatum' => $post['einddatum'], ':schip' => $post['schip'], ':prijs' => $post['prijs']));
         header('Location:cursus_overzicht.php');
     }
+    //
 
     function getSchip(){
         $query = $this->db->prepare('SELECT naam_schip FROM schip');

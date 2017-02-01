@@ -2,19 +2,22 @@
 
 class Connection
 {
+    //met deze klasse kan je met elke database connecten
     private $db;
+    
+    //parameter $host=ip of leef als localhost wordt gebruikt; $databse=naam van de database; $username=inlognaam; password=wachtwoord
     public function __construct($host = 'localhost', $database, $username, $password)
     {
         $this->db = new PDO('mysql:host='.$host.';dbname='.$database, $username, $password);
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        error_reporting(-1);
         session_start();
     }
-
+    //
+    
+    //return Database zodat er mee gewerkt kan worden
     public function getDb()
     {
         return $this->db;
     }
-
-
+    //
 }

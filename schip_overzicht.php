@@ -76,7 +76,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
                 } else {
                     echo "<td>Ja</td>";
                 }
-                  echo "<td><a href='delete_schip.php?naam_schip=".$value['naam_schip']."' class='btn btn-danger'>Delete</a></td>";
+                  echo "<td><a href='delete_schip.php?naam_schip=".$value['naam_schip']."' class='btn btn-danger'>Verwijder</a></td>";
                 echo '<tr>';
             }
 

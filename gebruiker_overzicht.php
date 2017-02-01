@@ -78,7 +78,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
                   echo '<td>'.$value['telefoon'].'</td>';
                   echo '<td>'.$value['email'].'</td>';
                   echo '<td>'.$value['rechten'].'</td>';
-                  echo "<td><a href='delete_gebruiker.php?email=".$value['email']."' class='btn btn-danger'>Delete</a></td>";
+                  echo "<td><a href='delete_gebruiker.php?email=".$value['email']."' class='btn btn-danger'>Verwijder</a></td>";
                 echo '<tr>';
             }
 

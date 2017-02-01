@@ -72,7 +72,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
             echo '<td>'.$value['einddatum'].'</td>';
             echo '<td>'.$value['prijs'].'</td>';
             echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'</td>';
-            echo "<td><a href='delete_cursus.php?cursus_naam=".$value['cursus_naam']."' class='btn btn-danger'>Delete</a></td>";
+            echo "<td><a href='delete_cursus.php?cursus_naam=".$value['cursus_naam']."' class='btn btn-danger'>Verwijder</a></td>";
             echo '<tr>';
         }
         ?>

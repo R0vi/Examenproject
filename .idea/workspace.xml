@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5071ca5e-0752-460c-80eb-2e55f973cdc3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cursustoevoegen_class.php" afterPath="$PROJECT_DIR$/cursustoevoegen_class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_cursus.php" afterPath="$PROJECT_DIR$/delete_cursus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_gebruiker.php" afterPath="$PROJECT_DIR$/delete_gebruiker.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_mislukt.php" afterPath="$PROJECT_DIR$/delete_mislukt.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_schip.php" afterPath="$PROJECT_DIR$/delete_schip.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gebruikeroverzicht_ophalen_class.php" afterPath="$PROJECT_DIR$/gebruikeroverzicht_ophalen_class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inschrijving_overzicht_class.php" afterPath="$PROJECT_DIR$/inschrijving_overzicht_class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_class.php" afterPath="$PROJECT_DIR$/login_class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/medewerker_toevoegen_class.php" afterPath="$PROJECT_DIR$/medewerker_toevoegen_class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register_class.php" afterPath="$PROJECT_DIR$/register_class.php" />
     </list>
     <ignored path="EXAMENPROJECT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login_class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login_class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login_class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -41,6 +32,16 @@
               <folding>
                 <marker date="1485941409813" expanded="true" signature="567:611" ph="SELECT * FRO... gebruiker" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_mislukt.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/delete_mislukt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,11 +83,11 @@
         <option value="$PROJECT_DIR$/register_class.php" />
         <option value="$PROJECT_DIR$/delete_cursus.php" />
         <option value="$PROJECT_DIR$/delete_gebruiker.php" />
-        <option value="$PROJECT_DIR$/delete_mislukt.php" />
         <option value="$PROJECT_DIR$/delete_schip.php" />
         <option value="$PROJECT_DIR$/gebruikeroverzicht_ophalen_class.php" />
         <option value="$PROJECT_DIR$/inschrijving_overzicht_class.php" />
         <option value="$PROJECT_DIR$/login_class.php" />
+        <option value="$PROJECT_DIR$/delete_mislukt.php" />
       </list>
     </option>
   </component>
@@ -213,12 +214,12 @@
       <workItem from="1485847613671" duration="21772000" />
       <workItem from="1485881126818" duration="8514000" />
       <workItem from="1485934471812" duration="20000" />
-      <workItem from="1485934493913" duration="6911000" />
+      <workItem from="1485934493913" duration="7426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58826000" />
+    <option name="totallyTimeSpent" value="59341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -549,14 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delete_mislukt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cursustoevoegen_class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -650,6 +643,14 @@
           <folding>
             <marker date="1485941409813" expanded="true" signature="567:611" ph="SELECT * FRO... gebruiker" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_mislukt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>

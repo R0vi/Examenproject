@@ -1,30 +1,21 @@
 <?php
-
 require_once 'connection.php';
-
 $connection = new Connection('', 'dewaai', 'root', '');
 ?>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>De Waai</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,16 +23,10 @@ $connection = new Connection('', 'dewaai', 'root', '');
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
-
 <body>
-
-
 <!-- Navigation -->
 <?php require 'nav.php' ?>
-
-
 <!-- Page Content -->
 <div class="container">
     <hr>
@@ -54,7 +39,6 @@ $connection = new Connection('', 'dewaai', 'root', '');
         }, 3000);
     </script>
     <hr>
-
 </div>
 <!-- Footer -->
 <footer>
@@ -81,7 +65,6 @@ $connection = new Connection('', 'dewaai', 'root', '');
                 </p>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12 copyright_footer">
                 <p>Copyright &copy; De Waai 2017</p>
@@ -89,22 +72,15 @@ $connection = new Connection('', 'dewaai', 'root', '');
         </div>
     </div>
 </footer>
-
-<!-- /.container -->
-
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
-
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-
 <!-- Script to Activate the Carousel -->
 <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
 </script>
-
 </body>
-
 </html>

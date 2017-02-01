@@ -79,7 +79,7 @@ $connection = new Connection('', 'dewaai', 'root', '');
         <!-- Script to Activate the Carousel -->
         <script>
             $('.carousel').carousel({
-=======
+
 <!-- Navigation -->
 <?php require 'nav.php' ?>
 <!-- Page Content -->

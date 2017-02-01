@@ -1,3 +1,7 @@
+<?php
+require_once 'connection.php';
+$connection = new Connection('', 'dewaai', 'root', '');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +48,23 @@
     <li><a href="index.php">Homepagina</a></li>
     <li><a href="info.php">Info</a></li>
     <li><a href="contact.php">Contact</a></li>
-    <li><a href="login.php">Login</a></li>
+    <li><a href="cursus_overzicht.php">Cursus overzicht</a></li>
+    <li><a href="account.php">Account</a></li>
+
+
+    
+               <?php 
+               if($_SESSION['login']['rechten'] == "admin"){
+                 ?>
+                      <li><a href="cursus_toevoegen.php">Cursus toevoegen</a></li>
+                      <li><a href="cursus_overzicht_admin.php">Cursus overzicht</a></li>
+                      <li><a href="schip_toevoegen.php">Schip toevoegen</a></li>
+                      <li><a href="schip_overzicht.php">Schip overzicht</a></li>
+                      <li><a href="gebruiker_overzicht.php">Gebruiker overzicht</a></li>
+                      <li><a href="inschrijving_overzicht.php">Inschrijvingen</a></li>
+                <?php } else { ?>
+                      <li><a href="inschrijving_overzicht.php">Inschrijvingen</a></li>
+                <?php }   ?>
 </ul>
         <hr>
 

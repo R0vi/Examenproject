@@ -83,7 +83,7 @@ $connection = new Connection('', 'dewaai', 'root', '');
                 <div class="row">
                     <div class="col-md-8">
                         <h3>Neem contact met ons op!</h3>
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" id="contactForm" novalidate action="mailto:info@dezwaai.nl">
                             <div class="control-group form-group">
                                 <div class="controls">
                                     <label>Naam:</label>

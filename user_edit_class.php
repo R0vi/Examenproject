@@ -16,7 +16,7 @@ class edit
             return false;
         }
         if(!empty($_POST['password'])){
-            $password = $_POST['password'];
+            $password = password_hash($_POST['password'], PASSWORD_DEFAULT);;
         } else {
             $this->errors = "Wachtwoord verkeerd ingevoerd!";
             return false;
@@ -52,7 +52,7 @@ class edit
             return false;
         }
         
-        $user_data = ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
+        $this->user_data = ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
 
         return ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
     }
@@ -62,17 +62,11 @@ class edit
             $query = $this->db->prepare('UPDATE gebruiker SET naam = :naam, adres = :adres, postcode = :postcode, woonplaats = :woonplaats, telefoon = :telefoon, email = :email, wachtwoord = :password WHERE Gebruikers_id = :gebruikers_id');
 
             $query->execute(array(':naam' => $post['naam'], ':adres' => $post['adres'], ':postcode' => $post['postcode'], ':woonplaats' => $post['woonplaats'], ':telefoon' => $post['telefoon'], ':email' => $post['email'], ':password' => $post['password'], ':gebruikers_id' => $_SESSION["login"]["Gebruikers_id"]));
-            
 
-
-            // $query = $this->db->prepare('SELECT * FROM gebruiker WHERE Gebruikers_id = :gebruikers_id');
-            // $query->execute(array(':gebruikers_id' => $_SESSION["login"]["gebruikers_id"]));
-            // $result = $query->fetch();
-            $_SESSION['login'] = $user_data;
+            $_SESSION['login'] = $this->user_data;
 
             header('Location:edit_success.php');
         } else {
-            echo "string";
             return false;
         }
     }

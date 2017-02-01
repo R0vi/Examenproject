@@ -55,7 +55,6 @@ if(!empty($_POST)){
 
         <!-- Page Content -->
         <div class="container">
-        <?php var_dump($_SESSION);?>
             <hr>
             <h1>Gebruiker gegevens wijzigen</h1>
             <div class="row">
@@ -67,7 +66,7 @@ if(!empty($_POST)){
                         <input type="text" name="woonplaats" class="form-control" placeholder="Woonplaats"  value="<?php echo $_SESSION['login']['4'];?>"><br>
                         <input type="text" name="telefoon" class="form-control" placeholder="Telefoon"  value="<?php echo $_SESSION['login']['5'];?>"><br>
                         <input type="email" name="email" class="form-control" placeholder="Email"  value="<?php echo $_SESSION['login']['6'];?>"><br>
-                        <input type="password" name="password" class="form-control" placeholder="Wachtwoord"  value="<?php echo $_SESSION['login']['7'];?>"><br>
+                        <input type="password" name="password" class="form-control" placeholder="Wachtwoord"><br>
                         <input type="submit" class="btn btn-success">
                     </form>
 

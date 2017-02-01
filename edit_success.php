@@ -46,10 +46,9 @@ $connection = new Connection('', 'dewaai', 'root', '');
             <hr>
             <div class="alert alert-success"><h1>Aanpassen gelukt!</h1></div>
             <h3>U wordt doorverwezen!</h3>
-            <h4>Graag opnieuw inloggen!</h4>
             <script>
                 var timer = setTimeout(function() {
-                    window.location='login.php'
+                    window.location='index.php'
                 }, 3000);
             </script>
             <hr>

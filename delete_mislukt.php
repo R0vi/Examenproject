@@ -25,7 +25,6 @@ $connection = new Connection('', 'dewaai', 'root', '');
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<<<<<<< HEAD
     <!-- Navigation -->
     <?php require 'nav.php' ?>
     <!-- Page Content -->

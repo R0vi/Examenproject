@@ -20,7 +20,6 @@ $connection = new Connection('', 'dewaai', 'root', '');
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,6 +30,7 @@ $connection = new Connection('', 'dewaai', 'root', '');
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -44,7 +44,7 @@ $connection = new Connection('', 'dewaai', 'root', '');
 <!-- Page Content -->
 <div class="container">
     <hr>
-    <div class="alert alert-success"><h1>Deleten mislukt!</h1></div>
+    <div class="alert alert-danger"><h1>Deleten mislukt!</h1></div>
     <h3>U wordt doorverwezen!</h3>
     <h4>dit veld is misschien nog ergens ingeschreven.</h4>
     <script>

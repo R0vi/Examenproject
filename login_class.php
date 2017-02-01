@@ -2,13 +2,16 @@
 
 class login
 {
+    //ophalen database connectie
     private $db;
 
     function __construct(Connection $connection){
         $this->connection = $connection;
         $this->db = $this->connection->getDb();
     }
+    //
 
+    //ophalen form data
     function getPost() {
         if(isset($_POST['email'])){
             if(isset($_POST['password'])){
@@ -16,7 +19,9 @@ class login
             }
         }
     }
+    //
 
+    //
     function compareWithDatabase($userPost){
         $query = $this->db->prepare('SELECT * FROM gebruiker WHERE email = :email');
         $query->execute(array(':email' => $userPost['email']));

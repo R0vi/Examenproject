@@ -5,13 +5,15 @@ class register
     private $db;
     public $errors = "";
 
+    //ophalen Database connectie
     function __construct(Connection $connection){
         $this->connection = $connection;
         $this->db = $this->connection->getDb();
     }
+    //
 
+    //ophalen form
     function getPost(){
-
             if(!empty($_POST['email'])){
                 $email = $_POST['email'];
 
@@ -66,7 +68,9 @@ class register
         
         return ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
     }
-
+    //
+    
+    //gebruiker naar database sturen
     function setUser($post){
         if(empty($this->errors)){
             $post['password'] = password_hash($post['password'], PASSWORD_DEFAULT);
@@ -77,5 +81,6 @@ class register
             return false;
         }
     }
+    //
 
 }

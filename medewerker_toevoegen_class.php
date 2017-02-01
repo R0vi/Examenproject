@@ -4,14 +4,15 @@ class medewerker_toevoegen
 {
     private $db;
     public $errors = "";
-
+    //ophalen Database connectie
     function __construct(Connection $connection){
         $this->connection = $connection;
         $this->db = $this->connection->getDb();
     }
+    //
 
+    //ophalen form
     function getPost(){
-
         if(!empty($_POST['email'])){
             $email = $_POST['email'];
 
@@ -66,7 +67,9 @@ class medewerker_toevoegen
 
         return ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'admin'];
     }
+    //
 
+    //medewerker naar database sturen
     function setMederwerker($post){
         if(empty($this->errors)){
             $post['password'] = password_hash($post['password'], PASSWORD_DEFAULT);
@@ -77,5 +80,6 @@ class medewerker_toevoegen
             return false;
         }
     }
+    //
 
 }

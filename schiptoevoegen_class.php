@@ -2,13 +2,16 @@
 
 class schiptoevoegen
 {
+    //ophalen database connectie
     private $db;
 
     function __construct(Connection $connection){
         $this->connection = $connection;
         $this->db = $this->connection->getDb();
     }
+    //
 
+    //ophalen form data
     function getPost(){
         if(isset($_POST['schip_naam'])){
             $schipnaam = $_POST['schip_naam'];
@@ -37,18 +40,22 @@ class schiptoevoegen
         }
         return ['schipnaam' => $schipnaam, 'schipnummer' => $schipnummer, 'schipontwerp' => $schipontwerp, 'cursus' => $cursus, 'schipaverij' => $schipaverij];
     }
-
+    //
+    
+    //schip data naar database sturen
     function setSchip($post){
         $query = $this->db->prepare('INSERT INTO schip (naam_schip, schipnummer, ontwerp, cursus, averij) VALUES (:schipnaam, :schipnummer, :ontwerp, :cursus, :averij)');
         $query->execute(array(':schipnaam' => $post['schipnaam'], ':schipnummer' => $post['schipnummer'], ':ontwerp' => $post['schipontwerp'], ':cursus' => $post['cursus'], ':averij' => $post['schipaverij']));
         header('Location:schip_overzicht.php');
     }
+    //
 
+    //ophalen cursus data
     function getCursus(){
         $query = $this->db->prepare('SELECT cursus_naam FROM cursus');
         $query->execute();
         $result = $query->fetchAll();
         return $result;
     }
-    
+    //    
 }

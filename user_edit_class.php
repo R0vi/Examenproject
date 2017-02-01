@@ -3,12 +3,16 @@ class edit
 {
     private $db;
     private $user_data;
+
+    //ophalen database connectie
     function __construct(Connection $connection){
         $this->connection = $connection;
         $this->db = $this->connection->getDb();
     }
-    function getPost(){
+    //
 
+    //ophalen form data
+    function getPost(){
         if(!empty($_POST['email'])){
             $email = $_POST['email'];
         } else {
@@ -56,7 +60,9 @@ class edit
 
         return ['email' => $email, 'password' => $password, 'naam' => $naam, 'adres' => $adres, 'postcode' => $postcode, 'woonplaats' => $woonplaats, 'telefoon' => $telefoon, 'rechten' => 'klant'];
     }
+    //
 
+    //bijwerken database met nieuwe user data
     function updateUser($post){
         if(empty($this->errors)){
             $query = $this->db->prepare('UPDATE gebruiker SET naam = :naam, adres = :adres, postcode = :postcode, woonplaats = :woonplaats, telefoon = :telefoon, email = :email, wachtwoord = :password WHERE Gebruikers_id = :gebruikers_id');
@@ -70,5 +76,5 @@ class edit
             return false;
         }
     }
-
+    //
 }

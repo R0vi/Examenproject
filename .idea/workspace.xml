@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5071ca5e-0752-460c-80eb-2e55f973cdc3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav.php" afterPath="$PROJECT_DIR$/nav.php" />
     </list>
     <ignored path="EXAMENPROJECT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,36 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cursus_overzicht.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cursus_overzicht.php">
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="46" />
+            <state relative-caret-position="544">
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inschrijving_overzicht.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inschrijving_overzicht.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inschrijving_overzicht_class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-              <folding>
-                <marker date="1485937657356" expanded="true" signature="284:306" ph="SELECT * FRO... gebruiker" />
-                <marker date="1485937657356" expanded="true" signature="284:355" ph="SELECT cursu... inschrijving" />
-                <marker date="1485937657356" expanded="true" signature="576:625" ph="SELECT * FRO... cursus" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -90,12 +66,12 @@
         <option value="$PROJECT_DIR$/edit_success.php" />
         <option value="$PROJECT_DIR$/register_succes.php" />
         <option value="$PROJECT_DIR$/delete_cursus.php" />
-        <option value="$PROJECT_DIR$/nav.php" />
         <option value="$PROJECT_DIR$/cursus_overzicht_admin.php" />
         <option value="$PROJECT_DIR$/schiptoevoegen_class.php" />
         <option value="$PROJECT_DIR$/cursustoevoegen_class.php" />
         <option value="$PROJECT_DIR$/inschrijving_overzicht_class.php" />
         <option value="$PROJECT_DIR$/inschrijving_overzicht.php" />
+        <option value="$PROJECT_DIR$/nav.php" />
       </list>
     </option>
   </component>
@@ -222,12 +198,12 @@
       <workItem from="1485847613671" duration="21772000" />
       <workItem from="1485881126818" duration="8514000" />
       <workItem from="1485934471812" duration="20000" />
-      <workItem from="1485934493913" duration="3369000" />
+      <workItem from="1485934493913" duration="3637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55284000" />
+    <option name="totallyTimeSpent" value="55552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -480,13 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/delete_mislukt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -591,18 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <marker date="1485937657356" expanded="true" signature="284:306" ph="SELECT * FRO... gebruiker" />
-            <marker date="1485937657356" expanded="true" signature="284:355" ph="SELECT cursu... inschrijving" />
-            <marker date="1485937657356" expanded="true" signature="576:625" ph="SELECT * FRO... cursus" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseSignUp_class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -618,18 +575,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cursus_overzicht.php">
+    <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="425">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <marker date="1485937657356" expanded="true" signature="284:306" ph="SELECT * FRO... gebruiker" />
+            <marker date="1485937657356" expanded="true" signature="284:355" ph="SELECT cursu... inschrijving" />
+            <marker date="1485937657356" expanded="true" signature="576:625" ph="SELECT * FRO... cursus" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inschrijving_overzicht.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="459">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cursus_overzicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
           <folding />
         </state>
       </provider>

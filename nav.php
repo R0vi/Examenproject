@@ -40,6 +40,7 @@
                       <li><a href="schip_toevoegen.php">Schip toevoegen</a></li>
                       <li><a href="schip_overzicht.php">Schip overzicht</a></li>
                       <li><a href="gebruiker_overzicht.php">Gebruiker overzicht</a></li>
+                      <li><a href="inschrijving_overzicht.php">Inschrijvingen</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -49,6 +50,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php  echo $_SESSION['login']['email']; ?> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <li><a href="account.php">Account</a></li>
+                      <li><a href="inschrijving_overzicht.php">Inschrijvingen</a></li>
                     </ul>
                   </li>
                 </ul>

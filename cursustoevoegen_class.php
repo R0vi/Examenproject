@@ -50,11 +50,13 @@ class cursustoevoegen
         header('Location:cursus_overzicht.php');
     }
     //
-
+    
+    //ophalen schip uit database
     function getSchip(){
         $query = $this->db->prepare('SELECT naam_schip FROM schip');
         $query->execute();
         $result = $query->fetchAll();
         return $result;
     }
+    //
 }

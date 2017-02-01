@@ -39,6 +39,7 @@
                       <li><a href="cursus_overzicht_admin.php">Cursus overzicht</a></li>
                       <li><a href="schip_toevoegen.php">Schip toevoegen</a></li>
                       <li><a href="schip_overzicht.php">Schip overzicht</a></li>
+                      <li><a href="medewerker_toevoegen.php">Medewerker toevoegen</a></li>
                       <li><a href="gebruiker_overzicht.php">Gebruiker overzicht</a></li>
                       <li><a href="inschrijving_overzicht.php">Inschrijvingen</a></li>
                     </ul>

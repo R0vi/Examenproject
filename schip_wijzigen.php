@@ -49,7 +49,7 @@ if(!empty($_POST)){
 <!-- Page Content -->
 <div class="container">
     <hr>
-    <h1>Cursus gegevens wijzigen</h1>
+    <h1>Schip gegevens wijzigen</h1>
     <div class="row">
         <div class="col-md-6">
             <?php

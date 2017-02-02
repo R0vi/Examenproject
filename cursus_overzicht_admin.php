@@ -46,6 +46,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
             <th>Einddatum</th>
             <th>Prijs</th>
             <th>Aantal cursisten</th>
+            <th>Edit</th>
             <th>Delete</th>
             <?php
             $cursus = $courseSingUp->getCursus();
@@ -62,7 +63,8 @@ if ($_SESSION['login']['rechten'] == "admin"){
                 echo '<td>'.$value['einddatum'].'</td>';
                 echo '<td>'.$value['prijs'].'</td>';
                 echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'/'.$value['max_cursusten'].'<p class="text-danger">'.cursusvol($courseSingUp->calcSignUp($value['cursus_naam']),$value['max_cursusten']).'</p></td>';
-            //delete knop voor het verwijderen van een user
+                echo "<td><a href='cursus_wijzigen.php?cursus_id=".$value['cursus_id']."' class='btn btn-success'>Edit</a></td>";
+                //delete knop voor het verwijderen van een user
                 echo "<td><a href='delete_cursus.php?cursus_naam=".$value['cursus_naam']."' class='btn btn-danger'>Verwijder</a></td>";
                 echo '<tr>';
             }

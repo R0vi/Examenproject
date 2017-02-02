@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'cursustoevoegen_class.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $cursustoevoegen = new cursustoevoegen($connection);
 if ($_SESSION['login']['rechten'] == "admin"){
     //

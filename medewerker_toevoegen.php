@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'medewerker_toevoegen_class.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $medewerker_toevoegen = new medewerker_toevoegen($connection);
 
 if ($_SESSION['login']['rechten'] == "admin"){

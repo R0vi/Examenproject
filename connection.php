@@ -6,9 +6,12 @@ class Connection
     private $db;
     
     //parameter $host=ip of leef als localhost wordt gebruikt; $databse=naam van de database; $username=inlognaam; password=wachtwoord
-    public function __construct($host = 'localhost', $database, $username, $password)
+    public function __construct()
     {
-        $this->db = new PDO('mysql:host='.$host.';dbname='.$database, $username, $password);
+        $database = 'dewaai';
+        $username = 'root';
+        $password = '';
+        $this->db = new PDO('mysql:host=localhost;dbname='.$database, $username, $password);
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         session_start();
     }

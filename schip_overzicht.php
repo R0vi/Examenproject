@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'schip_ophalen_class.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $schip_get = new schip_ophalen($connection);
 if ($_SESSION['login']['rechten'] == "admin"){
    //

@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'register_class.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $register = new register($connection);
 if(!empty($_POST)){
     $register->setUser($register->getPost());

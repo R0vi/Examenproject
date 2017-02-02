@@ -2,7 +2,7 @@
 require_once 'connection.php';
 require_once 'login_class.php';
 
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $login = new login($connection);
 
 if(!empty($_POST)){

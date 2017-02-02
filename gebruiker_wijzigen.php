@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'user_edit_class.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $edit = new edit($connection);
 if (isset($_SESSION['login'])){
    //

@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'gebruikeroverzicht_ophalen_class.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $user_get = new gebruikers_ophalen($connection);
 if ($_SESSION['login']['rechten'] == "admin"){
    //

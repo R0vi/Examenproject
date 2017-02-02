@@ -2,7 +2,7 @@
 require_once 'connection.php';
 require_once 'inschrijving_overzicht_class.php';
 require_once 'courseSignUp_class.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $inschrijving_overzicht = new inschrijving_overzicht($connection);
 $courseSingUp = new coursesignup($connection);
 ?>

@@ -1,6 +1,6 @@
 <?php
 require_once 'connection.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 
 if (isset($_SESSION['login'])){
    //

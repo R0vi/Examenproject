@@ -1,7 +1,7 @@
 <?php
 //ophalen database connectie
 require_once 'connection.php';
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 //
 
 //uiloggen

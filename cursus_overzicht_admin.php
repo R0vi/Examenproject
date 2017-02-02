@@ -2,7 +2,7 @@
 require_once 'connection.php';
 require_once 'courseSignUp_class.php';
 
-$connection = new Connection('', 'dewaai', 'root', '');
+$connection = new Connection();
 $courseSingUp = new coursesignup($connection);
 
 if ($_SESSION['login']['rechten'] == "admin"){

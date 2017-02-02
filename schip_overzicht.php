@@ -44,6 +44,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
             <th>Ontwerp</th>
             <th>Cursus</th>
             <th>Averij</th>
+            <th>Edit</th>
             <th>Delete</th>
             <?php
             $schip = $schip_get->getSchip();
@@ -58,6 +59,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
               } else {
                 echo "<td>Ja</td>";
               }
+              echo "<td><a href='schip_wijzigen.php?schip_id=".$value['schip_id']."' class='btn btn-success'>Edit</a></td>";
               echo "<td><a href='delete_schip.php?naam_schip=".$value['naam_schip']."' class='btn btn-danger'>Verwijder</a></td>";
               echo '<tr>';
             }

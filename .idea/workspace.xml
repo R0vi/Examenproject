@@ -3,30 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5071ca5e-0752-460c-80eb-2e55f973cdc3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account.php" afterPath="$PROJECT_DIR$/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connection.php" afterPath="$PROJECT_DIR$/connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.php" afterPath="$PROJECT_DIR$/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cursus_overzicht.php" afterPath="$PROJECT_DIR$/cursus_overzicht.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cursus_overzicht_admin.php" afterPath="$PROJECT_DIR$/cursus_overzicht_admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cursus_toevoegen.php" afterPath="$PROJECT_DIR$/cursus_toevoegen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_cursus.php" afterPath="$PROJECT_DIR$/delete_cursus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_gebruiker.php" afterPath="$PROJECT_DIR$/delete_gebruiker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_mislukt.php" afterPath="$PROJECT_DIR$/delete_mislukt.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_schip.php" afterPath="$PROJECT_DIR$/delete_schip.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_success.php" afterPath="$PROJECT_DIR$/edit_success.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gebruiker_overzicht.php" afterPath="$PROJECT_DIR$/gebruiker_overzicht.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gebruiker_wijzigen.php" afterPath="$PROJECT_DIR$/gebruiker_wijzigen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.php" afterPath="$PROJECT_DIR$/info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inschrijving_overzicht.php" afterPath="$PROJECT_DIR$/inschrijving_overzicht.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/medewerker_toevoegen.php" afterPath="$PROJECT_DIR$/medewerker_toevoegen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register_succes.php" afterPath="$PROJECT_DIR$/register_succes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schip_overzicht.php" afterPath="$PROJECT_DIR$/schip_overzicht.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schip_toevoegen.php" afterPath="$PROJECT_DIR$/schip_toevoegen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sitemap.php" afterPath="$PROJECT_DIR$/sitemap.php" />
     </list>
     <ignored path="EXAMENPROJECT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,98 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logout.php">
+      <file leaf-file-name="cursus_overzicht_admin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cursus_overzicht_admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="425">
+              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="medewerker_toevoegen.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medewerker_toevoegen.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nav.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register_class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register_class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="83" column="6" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-              <folding>
-                <marker date="1485941409873" expanded="true" signature="425:469" ph="SELECT * FRO... gebruiker" />
-                <marker date="1485941409873" expanded="true" signature="2581:2763" ph="INSERT INTO gebruiker... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register_succes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register_succes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schip_overzicht.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schip_overzicht.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schip_toevoegen.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schip_toevoegen.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemap.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sitemap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
-              <folding>
-                <marker date="1486044926421" expanded="true" signature="103:830" ph="..." />
-                <marker date="1486044926421" expanded="true" signature="110:830" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -165,7 +56,6 @@
         <option value="$PROJECT_DIR$/schiptoevoegen_class.php" />
         <option value="$PROJECT_DIR$/user_edit_class.php" />
         <option value="$PROJECT_DIR$/nav.php" />
-        <option value="$PROJECT_DIR$/cursus_overzicht_admin.php" />
         <option value="$PROJECT_DIR$/connection.php" />
         <option value="$PROJECT_DIR$/account.php" />
         <option value="$PROJECT_DIR$/contact.php" />
@@ -189,6 +79,7 @@
         <option value="$PROJECT_DIR$/schip_overzicht.php" />
         <option value="$PROJECT_DIR$/schip_toevoegen.php" />
         <option value="$PROJECT_DIR$/sitemap.php" />
+        <option value="$PROJECT_DIR$/cursus_overzicht_admin.php" />
       </list>
     </option>
   </component>
@@ -316,12 +207,13 @@
       <workItem from="1485881126818" duration="8514000" />
       <workItem from="1485934471812" duration="20000" />
       <workItem from="1485934493913" duration="12904000" />
-      <workItem from="1486044377255" duration="549000" />
+      <workItem from="1486044377255" duration="704000" />
+      <workItem from="1486045497280" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65368000" />
+    <option name="totallyTimeSpent" value="65547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -389,7 +281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -451,11 +342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="32" />
-          <folding>
-            <marker date="1485941409644" expanded="true" signature="1320:1503" ph="INSERT INTO cursus... " />
-            <marker date="1485941409644" expanded="true" signature="1449:1501" ph="SELECT schip... schip" />
-            <marker date="1485941409644" expanded="true" signature="1870:1898" ph="SELECT naam_... schip" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,11 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding>
-            <marker date="1485941409782" expanded="true" signature="430:452" ph="SELECT * FRO... gebruiker" />
-            <marker date="1485941409782" expanded="true" signature="430:501" ph="SELECT cursu... inschrijving" />
-            <marker date="1485941409782" expanded="true" signature="722:771" ph="SELECT * FRO... cursus" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,10 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
           <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-          <folding>
-            <marker date="1485944683877" expanded="true" signature="1263:1393" ph="INSERT INTO schip... " />
-            <marker date="1485944683877" expanded="true" signature="1758:1788" ph="SELECT cursu... cursus" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,9 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <marker date="1485941409744" expanded="true" signature="333:356" ph="SELECT * FRO... gebruiker" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,9 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <marker date="1485944683644" expanded="true" signature="2234:2430" ph="UPDATE gebru... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,7 +391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,27 +416,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cursus_overzicht.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cursus_toevoegen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cursus_overzicht_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,7 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,9 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <marker date="1486044925760" expanded="true" signature="407:458" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,9 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <marker date="1486044925940" expanded="true" signature="392:434" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,7 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,9 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <marker date="1486044926362" expanded="true" signature="400:448" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,7 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,7 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,9 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-          <folding>
-            <marker date="1485944173333" expanded="true" signature="587:631" ph="SELECT * FRO... gebruiker" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,14 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -717,7 +540,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/register_class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
+        <state relative-caret-position="1411">
           <caret line="83" column="6" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
           <folding>
             <marker date="1485941409873" expanded="true" signature="425:469" ph="SELECT * FRO... gebruiker" />
@@ -754,10 +577,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
-          <folding>
-            <marker date="1486044926421" expanded="true" signature="103:830" ph="..." />
-            <marker date="1486044926421" expanded="true" signature="110:830" ph="..." />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cursus_overzicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cursus_overzicht_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -38,7 +38,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
     <?php require 'nav.php' ?>
     <!-- Page Content -->
     <div class="container">
-        <h1>Cursus overzicht overzicht</h1>
+        <h1>Cursus overzicht</h1>
         <hr>
         <table class="table table-hover">
             <th>Cursus</th>

@@ -49,6 +49,11 @@ if ($_SESSION['login']['rechten'] == "admin"){
             <th>Delete</th>
             <?php
             $cursus = $courseSingUp->getCursus();
+            function cursusvol($aantal, $max){
+                if($aantal == $max){
+                    return 'maximaal berijkt!';
+                }
+            }
             // foreach loop die de gegevens om en om print
             foreach ($cursus as $value){
                 echo '<tr>';
@@ -56,7 +61,7 @@ if ($_SESSION['login']['rechten'] == "admin"){
                 echo '<td>'.$value['begindatum'].'</td>';
                 echo '<td>'.$value['einddatum'].'</td>';
                 echo '<td>'.$value['prijs'].'</td>';
-                echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'</td>';
+                echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'/'.$value['max_cursusten'].'<p class="text-danger">'.cursusvol($courseSingUp->calcSignUp($value['cursus_naam']),$value['max_cursusten']).'</p></td>';
             //delete knop voor het verwijderen van een user
                 echo "<td><a href='delete_cursus.php?cursus_naam=".$value['cursus_naam']."' class='btn btn-danger'>Verwijder</a></td>";
                 echo '<tr>';

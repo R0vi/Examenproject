@@ -28,4 +28,24 @@ class inschrijving_overzicht
         return $cursusData;
     }
     //
+    function getAdminInschrijving(){
+        $query = $this->db->prepare('SELECT cursus_id FROM inschrijving');
+        $query->execute();
+        $cursus_id = $query->fetchAll();
+
+        $cursusData = [];
+        $buffer = '';
+        foreach($cursus_id as $cursus){
+            if($buffer == $cursus['cursus_id']){
+                //
+            } else {
+                $query2 = $this->db->prepare('SELECT * FROM cursus WHERE cursus_id = :cursus_id');
+                $query2->execute(array(':cursus_id' => $cursus['cursus_id']));
+                $result = $query2->fetch();
+                array_push($cursusData, $result);
+            }
+            $buffer = $cursus['cursus_id'];
+        }
+        return $cursusData;
+    }
 }

@@ -48,6 +48,11 @@ if(!empty($_POST)){
             <th>Inschrijven?</th>
             <?php
             $cursus = $courseSingUp->getCursus();
+            function cursusvol($aantal, $max){
+              if($aantal == $max){
+                return 'maximaal berijkt!';
+              }
+            }
             // foreach loop die de gegevens om en om print
             foreach ($cursus as $value){
               echo '<tr>';
@@ -55,13 +60,17 @@ if(!empty($_POST)){
               echo '<td>'.$value['begindatum'].'</td>';
               echo '<td>'.$value['einddatum'].'</td>';
               echo '<td>'.$value['prijs'].'</td>';
-              echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'</td>';
+              echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'/'.$value['max_cursusten'].'<p class="text-danger">'.cursusvol($courseSingUp->calcSignUp($value['cursus_naam']),$value['max_cursusten']).'</p></td>';
               echo '<td>';
               if(isset($_SESSION['login'])){
-                echo "<form action='cursus_overzicht.php' method='post'>";
-                echo "<input type='hidden' name='cursus_naam' value='".$value['cursus_naam']."'>";
-                echo "<input type='submit' class='btn btn-success' value='bestellen'>";
-                echo "</form>";
+                if (cursusvol($courseSingUp->calcSignUp($value['cursus_naam']),$value['max_cursusten']) == 'maximaal berijkt!') {
+                  echo "<a class='btn btn-danger'>De cursus is vol</a>";
+                  } else {
+                    echo "<form action='cursus_overzicht.php' method='post'>";
+                    echo "<input type='hidden' name='cursus_naam' value='" . $value['cursus_naam'] . "'>";
+                    echo "<input type='submit' class='btn btn-success' value='bestellen'>";
+                    echo "</form>";
+                  }
               } else {
                 //link naar login ipv inschrijving wanneer niet ingelogd
                 echo "<a href='login.php' class='btn btn-success'>login om in te schrijven</a>";

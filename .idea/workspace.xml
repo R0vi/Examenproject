@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5071ca5e-0752-460c-80eb-2e55f973cdc3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/EXAMENPROJECT.iml" afterPath="$PROJECT_DIR$/.idea/EXAMENPROJECT.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cursus_overzicht.php" afterPath="$PROJECT_DIR$/cursus_overzicht.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cursus_overzicht_admin.php" afterPath="$PROJECT_DIR$/cursus_overzicht_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inschrijving_overzicht.php" afterPath="$PROJECT_DIR$/inschrijving_overzicht.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inschrijving_overzicht_class.php" afterPath="$PROJECT_DIR$/inschrijving_overzicht_class.php" />
     </list>
     <ignored path="EXAMENPROJECT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,12 +31,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cursus_overzicht_admin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cursus_overzicht_admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cursus_overzicht_admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="55" selection-end-column="13" />
+              <folding>
+                <marker date="1486052490145" expanded="true" signature="2996:3012" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inschrijving_overzicht.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inschrijving_overzicht.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="50" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="7" />
+              <folding>
+                <marker date="1486055219943" expanded="true" signature="2464:3516" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="2492:3506" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="2518:3329" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="2553:2848" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="2573:2779" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="2883:2967" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="3002:3314" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="3063:3295" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="3355:3495" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="3408:3480" placeholder="..." />
+                <marker date="1486055219943" expanded="true" signature="3719:3727" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inschrijving_overzicht_admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inschrijving_overzicht_class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+              <folding>
+                <marker date="1486056478922" expanded="true" signature="430:501" placeholder="SELECT cursu... inschrijving" />
+                <marker date="1486056478922" expanded="true" signature="722:771" placeholder="SELECT * FRO... cursus" />
+                <marker date="1486056478922" expanded="true" signature="1061:1095" placeholder="SELECT cursu... inschrijving" />
+                <marker date="1486056478922" expanded="true" signature="1391:1440" placeholder="SELECT * FRO... cursus" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,7 +105,6 @@
         <option value="$PROJECT_DIR$/medewerker_toevoegen_class.php" />
         <option value="$PROJECT_DIR$/register_class.php" />
         <option value="$PROJECT_DIR$/gebruikeroverzicht_ophalen_class.php" />
-        <option value="$PROJECT_DIR$/inschrijving_overzicht_class.php" />
         <option value="$PROJECT_DIR$/login_class.php" />
         <option value="$PROJECT_DIR$/schip_ophalen_class.php" />
         <option value="$PROJECT_DIR$/schiptoevoegen_class.php" />
@@ -59,7 +113,6 @@
         <option value="$PROJECT_DIR$/connection.php" />
         <option value="$PROJECT_DIR$/account.php" />
         <option value="$PROJECT_DIR$/contact.php" />
-        <option value="$PROJECT_DIR$/cursus_overzicht.php" />
         <option value="$PROJECT_DIR$/cursus_toevoegen.php" />
         <option value="$PROJECT_DIR$/delete_cursus.php" />
         <option value="$PROJECT_DIR$/delete_gebruiker.php" />
@@ -70,7 +123,6 @@
         <option value="$PROJECT_DIR$/gebruiker_wijzigen.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/info.php" />
-        <option value="$PROJECT_DIR$/inschrijving_overzicht.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/medewerker_toevoegen.php" />
@@ -80,14 +132,18 @@
         <option value="$PROJECT_DIR$/schip_toevoegen.php" />
         <option value="$PROJECT_DIR$/sitemap.php" />
         <option value="$PROJECT_DIR$/cursus_overzicht_admin.php" />
+        <option value="$PROJECT_DIR$/cursus_overzicht.php" />
+        <option value="$PROJECT_DIR$/inschrijving_overzicht.php" />
+        <option value="$PROJECT_DIR$/inschrijven_overzicht_admin.php" />
+        <option value="$PROJECT_DIR$/inschrijving_overzicht_admin.php" />
+        <option value="$PROJECT_DIR$/inschrijving_overzicht_class.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -125,27 +181,27 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EXAMENPROJECT" />
+              <option name="myItemId" value="Examenproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EXAMENPROJECT" />
+              <option name="myItemId" value="Examenproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EXAMENPROJECT" />
+              <option name="myItemId" value="Examenproject" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,11 +265,12 @@
       <workItem from="1485934493913" duration="12904000" />
       <workItem from="1486044377255" duration="704000" />
       <workItem from="1486045497280" duration="24000" />
+      <workItem from="1486051475536" duration="4322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65547000" />
+    <option name="totallyTimeSpent" value="69869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -256,13 +313,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -345,13 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medewerker_toevoegen_class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-431">
@@ -398,21 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseSignUp_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="32" />
-          <folding>
-            <marker date="1485939281492" expanded="true" signature="358:378" ph="SELECT * FRO... cursus" />
-            <marker date="1485939281492" expanded="true" signature="711:911" ph="INSERT INTO inschrijving... " />
-            <marker date="1485939281492" expanded="true" signature="772:833" ph="SELECT cursu... cursus" />
-            <marker date="1485939281492" expanded="true" signature="837:909" ph="SELECT Gebru... gebruiker" />
-            <marker date="1485939281492" expanded="true" signature="1201:1257" ph="SELECT cursu... cursus" />
-            <marker date="1485939281492" expanded="true" signature="1390:1457" ph="SELECT gebru... inschrijving" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,13 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inschrijving_overzicht.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -518,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -526,7 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -534,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,10 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
           <caret line="83" column="6" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-          <folding>
-            <marker date="1485941409873" expanded="true" signature="425:469" ph="SELECT * FRO... gebruiker" />
-            <marker date="1485941409873" expanded="true" signature="2581:2763" ph="INSERT INTO gebruiker... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,7 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,19 +602,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/courseSignUp_class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cursus_overzicht.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="714">
+          <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inschrijving_overzicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="50" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="7" />
+          <folding>
+            <marker date="1486055219943" expanded="true" signature="2464:3516" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="2492:3506" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="2518:3329" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="2553:2848" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="2573:2779" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="2883:2967" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="3002:3314" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="3063:3295" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="3355:3495" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="3408:3480" placeholder="..." />
+            <marker date="1486055219943" expanded="true" signature="3719:3727" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cursus_overzicht_admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="408">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="55" selection-end-column="13" />
+          <folding>
+            <marker date="1486052490145" expanded="true" signature="2996:3012" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inschrijving_overzicht_class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding>
+            <marker date="1486056478922" expanded="true" signature="430:501" placeholder="SELECT cursu... inschrijving" />
+            <marker date="1486056478922" expanded="true" signature="722:771" placeholder="SELECT * FRO... cursus" />
+            <marker date="1486056478922" expanded="true" signature="1061:1095" placeholder="SELECT cursu... inschrijving" />
+            <marker date="1486056478922" expanded="true" signature="1391:1440" placeholder="SELECT * FRO... cursus" />
+          </folding>
         </state>
       </provider>
     </entry>

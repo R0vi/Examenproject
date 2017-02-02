@@ -34,7 +34,7 @@ $courseSingUp = new coursesignup($connection);
 <?php require 'nav.php' ?>
 <!-- Page Content -->
 <div class="container">
-    <h1>Inschrijvingen overzicht</h1>
+    <h1>Totaal inschrijvingen overzicht</h1>
     <hr>
     <table class="table table-hover">
         <th>Cursus</th>
@@ -42,8 +42,11 @@ $courseSingUp = new coursesignup($connection);
         <th>Einddatum</th>
         <th>Prijs</th>
         <th>Aantal cursisten</th>
+        <th>Opbrengst</th>
         <?php
-        $cursus = $inschrijving_overzicht->getInschrijving($_SESSION['login']['Gebruikers_id']);
+        $cursus = $inschrijving_overzicht->getAdminInschrijving();
+        $totaalcursisten = 0;
+        $totaalopbrengst = 0;
         function cursusvol($aantal, $max){
             if($aantal == $max){
                 return 'maximaal berijkt!';
@@ -56,9 +59,20 @@ $courseSingUp = new coursesignup($connection);
             echo '<td>'.$value['einddatum'].'</td>';
             echo '<td>'.$value['prijs'].'</td>';
             echo '<td> '.$courseSingUp->calcSignUp($value['cursus_naam']).'/'.$value['max_cursusten'].'<p class="text-danger">'.cursusvol($courseSingUp->calcSignUp($value['cursus_naam']),$value['max_cursusten']).'</p></td>';
+            echo '<td>'.$courseSingUp->calcSignUp($value['cursus_naam']) * $value['prijs'].'</td>';
             echo '<tr>';
+            $totaalcursisten = $totaalcursisten + $courseSingUp->calcSignUp($value['cursus_naam']);
+            $totaalopbrengst = $totaalopbrengst + $courseSingUp->calcSignUp($value['cursus_naam']) * $value['prijs'];
         }
         ?>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Totaal cursisten: <br/><?php echo $totaalcursisten ?></td>
+            <td>Totaal opbrengst: <br/><?php echo $totaalopbrengst ?></td>
+        </tr>
     </table>
     <hr>
 </div>

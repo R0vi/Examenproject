@@ -33,21 +33,26 @@ class cursustoevoegen
         } else {
             return false;
         }
+        if(isset($_POST['max_cursusten'])){
+            $maxcursusten = $_POST['max_cursusten'];
+        } else {
+            return false;
+        }
         if(isset($_POST['schip'])){
             $schip = $_POST['schip'];
         } else {
             return false;
         }
-        return ['cursusnaam' => $cursusnaam, 'begindatum' => $begindatum, 'einddatum' => $einddatum, 'prijs' => $prijs, 'schip' => $schip];
+        return ['cursusnaam' => $cursusnaam, 'begindatum' => $begindatum, 'einddatum' => $einddatum, 'prijs' => $prijs, 'max_cursusten' => $maxcursusten, 'schip' => $schip];
     }
     //
     
     //cursus naar de database sturen
     //parameter=het form (in meeste gevallen de functie getPost)
     function setCursus($post){
-        $query = $this->db->prepare('INSERT INTO cursus (cursus_naam, begindatum, einddatum, prijs, schip_id) VALUES (:cursus_naam, :begindatum, :einddatum, :prijs, (SELECT schip_id FROM schip WHERE naam_schip = :schip))');
-        $query->execute(array(':cursus_naam' => $post['cursusnaam'], ':begindatum' => $post['begindatum'], ':einddatum' => $post['einddatum'], ':schip' => $post['schip'], ':prijs' => $post['prijs']));
-        header('Location:cursus_overzicht.php');
+        $query = $this->db->prepare('INSERT INTO cursus (cursus_naam, begindatum, einddatum, prijs, max_cursusten, schip_id) VALUES (:cursus_naam, :begindatum, :einddatum, :prijs, :max_cursusten, (SELECT schip_id FROM schip WHERE naam_schip = :schip))');
+        $query->execute(array(':cursus_naam' => $post['cursusnaam'], ':begindatum' => $post['begindatum'], ':einddatum' => $post['einddatum'], ':schip' => $post['schip'], ':prijs' => $post['prijs'], ':max_cursusten' => $post['max_cursusten']));
+        header('Location:cursus_overzicht_admin.php');
     }
     //
     

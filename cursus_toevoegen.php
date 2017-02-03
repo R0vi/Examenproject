@@ -49,6 +49,7 @@ if(!empty($_POST)){
                         Begindatum:<input type="date" name="begindatum" placeholder="--/--/--" class="form-control"><br>
                         Einddatum:<input type="date" name="einddatum" placeholder="--/--/--" class="form-control"><br>
                         Prijs:<input type="number" name="prijs" placeholder="---" class="form-control"><br>
+                        Max aantal cursisten:<input type="number" name="max_cursusten" placeholder="Max aantal cursisten" class="form-control"><br>
                         Schip:<select class="form-control" name="schip">
                         <?php //dropdown met schepen
                         $schip = $cursustoevoegen->getSchip();
